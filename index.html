@@ -530,7 +530,8 @@
     <nav id="main-nav">
       <button class="nav-link active" onclick="showSection('inicio')">🏠 Inicio</button>
       <button class="nav-link" onclick="showSection('estrategia')">📋 Estrategia</button>
-      <button class="nav-link" onclick="showSection('propedeutico')">📚 Nivelación de Aprendizajes</button>
+      <button class="nav-link" onclick="showSection('materias')">📚 Materias</button>
+      <button class="nav-link" onclick="showSection('propedeutico')">📘 Nivelación de Aprendizajes</button>
       <button class="nav-link" onclick="showSection('comunicados')">📢 Comunicados</button>
       <button class="nav-link" onclick="showSection('recursos')">📁 Recursos</button>
       <button class="nav-link" onclick="showSection('resultados')">📊 Resultados</button>
@@ -822,11 +823,67 @@
 </section>
 
 <!-- ══════════════════════════════════════════
-     SECCIÓN 3: PROPEDÉUTICO
+     SECCIÓN 3: MATERIAS (NUEVO APARTADO)
+══════════════════════════════════════════ -->
+<section id="materias" class="section">
+  <div class="page">
+    <div class="section-title">📚 Asignaturas que se atenderán durante el semestre</div>
+    <div class="section-title-line"></div>
+
+    <!-- Lista de materias del primer semestre -->
+    <div style="background:var(--white); border-radius:var(--radius); border:1px solid var(--gray-200); padding:1.5rem 2rem; margin-bottom:2rem; box-shadow:var(--shadow-sm);">
+      <h3 style="font-family:'Sora',sans-serif; font-weight:600; font-size:1.1rem; color:var(--plumbago-dark); margin-bottom:1rem;">Primer semestre</h3>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(180px,1fr)); gap:.75rem;">
+        <div style="display:flex; align-items:center; gap:.5rem; font-size:.9rem; color:var(--gray-700);">
+          <span style="width:10px; height:10px; border-radius:50%; background:var(--teal); flex-shrink:0;"></span> Ciencias Naturales y experimentales
+        </div>
+        <div style="display:flex; align-items:center; gap:.5rem; font-size:.9rem; color:var(--gray-700);">
+          <span style="width:10px; height:10px; border-radius:50%; background:#3b82f6; flex-shrink:0;"></span> Matemáticas
+        </div>
+        <div style="display:flex; align-items:center; gap:.5rem; font-size:.9rem; color:var(--gray-700);">
+          <span style="width:10px; height:10px; border-radius:50%; background:#8b5cf6; flex-shrink:0;"></span> Lengua y Comunicación
+        </div>
+        <div style="display:flex; align-items:center; gap:.5rem; font-size:.9rem; color:var(--gray-700);">
+          <span style="width:10px; height:10px; border-radius:50%; background:#f59e0b; flex-shrink:0;"></span> Humanidades
+        </div>
+        <div style="display:flex; align-items:center; gap:.5rem; font-size:.9rem; color:var(--gray-700);">
+          <span style="width:10px; height:10px; border-radius:50%; background:#10b981; flex-shrink:0;"></span> Ciencias Sociales
+        </div>
+        <div style="display:flex; align-items:center; gap:.5rem; font-size:.9rem; color:var(--gray-700);">
+          <span style="width:10px; height:10px; border-radius:50%; background:#ec4899; flex-shrink:0;"></span> Informática
+        </div>
+        <div style="display:flex; align-items:center; gap:.5rem; font-size:.9rem; color:var(--gray-700);">
+          <span style="width:10px; height:10px; border-radius:50%; background:#ef4444; flex-shrink:0;"></span> Inglés
+        </div>
+      </div>
+    </div>
+
+    <!-- TABLAS DE ESPECIFICACIÓN (iframe) -->
+    <div style="background:var(--white); border-radius:var(--radius); border:1px solid var(--gray-200); overflow:hidden; box-shadow:var(--shadow-sm);">
+      <div style="padding:1rem 1.5rem; background:var(--gray-50); border-bottom:1px solid var(--gray-200); display:flex; align-items:center; gap:.75rem; flex-wrap:wrap;">
+        <span style="font-family:'Sora',sans-serif; font-weight:600; font-size:.9rem; color:var(--plumbago-dark);">📋 Tablas de especificación TEST — Detalle por materia</span>
+        <span style="font-size:.75rem; color:var(--gray-400); margin-left:auto;">Solo primer semestre</span>
+      </div>
+      <div style="padding:1.5rem; background:var(--gray-50);">
+        <iframe 
+          src="https://ezamarripa-creator.github.io/Tablas_de_Especificaci-n_Semestral2026B/" 
+          style="width:100%; height:550px; border:1px solid var(--gray-200); border-radius:var(--radius-sm); background:var(--white);"
+          title="Tablas de especificación Semestral 2026B"
+        ></iframe>
+        <div style="margin-top:.75rem; font-size:.78rem; color:var(--gray-400); text-align:right;">
+          Fuente: Dirección Académica · COBAED
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SECCIÓN 4: PROPEDÉUTICO (Nivelación)
 ══════════════════════════════════════════ -->
 <section id="propedeutico" class="section">
   <div class="page">
-    <div class="section-title">📚 Curso para nivelación</div>
+    <div class="section-title">📘 Curso para nivelación</div>
     <div class="section-title-line"></div>
     <div class="grid-2" style="margin-bottom:1.5rem;">
       <div class="card">
@@ -882,7 +939,7 @@
 </section>
 
 <!-- ══════════════════════════════════════════
-     SECCIÓN 4: COMUNICADOS
+     SECCIÓN 5: COMUNICADOS
 ══════════════════════════════════════════ -->
 <section id="comunicados" class="section">
   <div class="page">
@@ -921,7 +978,7 @@
 </section>
 
 <!-- ══════════════════════════════════════════
-     SECCIÓN 5: RECURSOS / DESCARGABLES
+     SECCIÓN 6: RECURSOS / DESCARGABLES
 ══════════════════════════════════════════ -->
 <section id="recursos" class="section">
   <div class="page">
@@ -986,7 +1043,7 @@
 </section>
 
 <!-- ══════════════════════════════════════════
-     SECCIÓN 6: RESULTADOS
+     SECCIÓN 7: RESULTADOS
 ══════════════════════════════════════════ -->
 <section id="resultados" class="section">
   <div class="page">
@@ -1004,7 +1061,7 @@
 </section>
 
 <!-- ══════════════════════════════════════════
-     SECCIÓN 7: CONTACTO
+     SECCIÓN 8: CONTACTO
 ══════════════════════════════════════════ -->
 <section id="contacto" class="section">
   <div class="page">
