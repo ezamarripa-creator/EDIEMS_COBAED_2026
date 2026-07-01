@@ -47,6 +47,9 @@
     --navy-mid: #0d2d5e;
     --blue: #1a56a0;
     --blue-light: #2c73d2;
+    --plumbago: #2c3e50;
+    --plumbago-light: #34495e;
+    --plumbago-dark: #1a2a3a;
     --accent: #f59e0b;
     --accent-pale: #fef3c7;
     --teal: #0891b2;
@@ -81,7 +84,7 @@
 
   /* ── TOP BAR ── */
   .topbar {
-    background: var(--navy);
+    background: var(--plumbago-dark);
     color: rgba(255,255,255,.7);
     font-size: .75rem;
     font-family: 'Sora', sans-serif;
@@ -93,7 +96,7 @@
 
   /* ── HEADER ── */
   header {
-    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 60%, #0f3460 100%);
+    background: linear-gradient(135deg, var(--plumbago-dark) 0%, var(--plumbago) 60%, var(--plumbago-light) 100%);
     position: sticky; top: 0; z-index: 100;
     box-shadow: 0 2px 20px rgba(0,0,0,.3);
   }
@@ -150,7 +153,7 @@
 
   /* ── HERO ── */
   .hero {
-    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 50%, #1a3a6b 100%);
+    background: linear-gradient(135deg, var(--plumbago-dark) 0%, var(--plumbago) 50%, var(--plumbago-light) 100%);
     padding: 4rem 1.5rem 3rem;
     position: relative; overflow: hidden;
   }
@@ -208,7 +211,7 @@
   /* ── SECTION TITLE ── */
   .section-title {
     font-family: 'Sora', sans-serif; font-size: 1.45rem; font-weight: 700;
-    color: var(--navy); margin-bottom: .4rem;
+    color: var(--plumbago-dark); margin-bottom: .4rem;
   }
   .section-title-line {
     width: 48px; height: 3px; border-radius: 2px;
@@ -225,7 +228,7 @@
   .card:hover { box-shadow: var(--shadow-lg); transform: translateY(-2px); }
 
   .card-header {
-    background: linear-gradient(135deg, var(--navy) 0%, var(--blue) 100%);
+    background: linear-gradient(135deg, var(--plumbago-dark) 0%, var(--plumbago) 100%);
     padding: 1.1rem 1.4rem;
     display: flex; align-items: center; gap: .75rem;
   }
@@ -256,7 +259,7 @@
   }
   .prose-card h2 {
     font-family: 'Sora', sans-serif; font-size: 1.15rem; font-weight: 700;
-    color: var(--navy); margin-bottom: 1rem;
+    color: var(--plumbago-dark); margin-bottom: 1rem;
     display: flex; align-items: center; gap: .5rem;
   }
   .prose-card p {
@@ -279,7 +282,7 @@
   }
   .info-card-header h4 {
     font-family: 'Sora', sans-serif; font-size: .82rem; font-weight: 600;
-    color: var(--navy);
+    color: var(--plumbago-dark);
   }
   .info-card-body { padding: .9rem 1.1rem; }
   .info-card-body p { font-size: .82rem; color: var(--gray-600); line-height: 1.6; }
@@ -308,7 +311,7 @@
     letter-spacing: .02em;
   }
   .tab-btn.active, .tab-btn:hover {
-    background: var(--navy); color: var(--white); border-color: var(--navy);
+    background: var(--plumbago-dark); color: var(--white); border-color: var(--plumbago-dark);
   }
   .tab-content { display: none; animation: fadeIn .3s ease; }
   .tab-content.active { display: block; }
@@ -320,7 +323,7 @@
     padding: 1rem 1.25rem;
     display: flex; justify-content: space-between; align-items: center;
     font-family: 'Sora', sans-serif; font-weight: 600; font-size: .88rem;
-    color: var(--navy); text-align: left; transition: background .2s;
+    color: var(--plumbago-dark); text-align: left; transition: background .2s;
   }
   .acc-trigger:hover { background: var(--gray-50); }
   .acc-trigger .arrow { font-size: .75rem; transition: transform .3s; color: var(--gray-400); }
@@ -355,18 +358,18 @@
   .resource-meta { flex: 1; min-width: 0; }
   .resource-meta h4 {
     font-family: 'Sora', sans-serif; font-weight: 600; font-size: .88rem;
-    color: var(--navy); margin-bottom: .2rem;
+    color: var(--plumbago-dark); margin-bottom: .2rem;
     white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
   }
   .resource-meta p { font-size: .78rem; color: var(--gray-400); }
   .resource-btn {
     display: inline-flex; align-items: center; gap: .35rem;
     padding: .5rem 1rem; border-radius: 7px;
-    background: var(--navy); color: var(--white);
+    background: var(--plumbago); color: var(--white);
     font-family: 'Sora', sans-serif; font-size: .78rem; font-weight: 600;
     text-decoration: none; transition: background .2s; white-space: nowrap;
   }
-  .resource-btn:hover { background: var(--blue); }
+  .resource-btn:hover { background: var(--plumbago-light); }
 
   /* ── COMUNICADOS ── */
   .comms-grid { display: flex; flex-direction: column; gap: 1rem; }
@@ -385,7 +388,7 @@
   }
   .comm-body h4 {
     font-family: 'Sora', sans-serif; font-weight: 600; font-size: .92rem;
-    color: var(--navy); margin-bottom: .3rem;
+    color: var(--plumbago-dark); margin-bottom: .3rem;
   }
   .comm-body p { font-size: .82rem; color: var(--gray-600); line-height: 1.5; margin-bottom: .5rem; }
   .comm-body a {
@@ -424,7 +427,7 @@
   }
   .contact-card h3 {
     font-family: 'Sora', sans-serif; font-weight: 700; font-size: 1rem;
-    color: var(--navy); margin-bottom: 1rem;
+    color: var(--plumbago-dark); margin-bottom: 1rem;
     display: flex; align-items: center; gap: .5rem;
   }
   .contact-row { display: flex; gap: .75rem; margin-bottom: .75rem; align-items: flex-start; }
@@ -449,7 +452,8 @@
 
   /* ── FOOTER ── */
   footer {
-    background: var(--navy); color: rgba(255,255,255,.55);
+    background: var(--plumbago-dark);
+    color: rgba(255,255,255,.55);
     padding: 2rem 1.5rem; text-align: center; font-size: .78rem;
     line-height: 1.7;
   }
@@ -483,7 +487,7 @@
   }
   .step-num {
     width: 28px; height: 28px; border-radius: 50%; flex-shrink: 0;
-    background: linear-gradient(135deg, var(--navy), var(--blue));
+    background: linear-gradient(135deg, var(--plumbago-dark), var(--plumbago));
     color: var(--white); font-family: 'Sora', sans-serif; font-weight: 700; font-size: .78rem;
     display: flex; align-items: center; justify-content: center; margin-top: .05rem;
   }
@@ -492,7 +496,7 @@
   @media (max-width: 720px) {
     .header-inner { padding: .6rem 1rem; }
     nav { display: none; flex-direction: column; position: absolute; top: 100%;
-      left: 0; right: 0; background: var(--navy-mid); padding: .5rem;
+      left: 0; right: 0; background: var(--plumbago); padding: .5rem;
       border-top: 1px solid rgba(255,255,255,.1); z-index: 200; }
     nav.open { display: flex; }
     .hamburger { display: block; }
@@ -529,7 +533,6 @@
       <button class="nav-link" onclick="showSection('propedeutico')">📚 Nivelación de Aprendizajes</button>
       <button class="nav-link" onclick="showSection('comunicados')">📢 Comunicados</button>
       <button class="nav-link" onclick="showSection('recursos')">📁 Recursos</button>
-      <!-- CALENDARIO eliminado -->
       <button class="nav-link" onclick="showSection('resultados')">📊 Resultados</button>
       <button class="nav-link" onclick="showSection('contacto')">✉️ Contacto</button>
     </nav>
@@ -550,8 +553,8 @@
       </p>
       <div class="hero-stats">
         <div class="stat-box"><div class="num">5</div><div class="lbl">Áreas evaluadas</div></div>
-        <div class="stat-box"><div class="num">2</div><div class="lbl">Instrumentos: Diagnostico Inicial TEST + Semestral </div></div>
-        <div class="stat-box"><div class="num">Sep 1-4</div><div class="lbl">Fecha de aplicación TEST 31 agosto 4 de septiembre 2026 </div></div>
+        <div class="stat-box"><div class="num">2</div><div class="lbl">Instrumentos: Diagnóstico Inicial TEST + Semestral</div></div>
+        <div class="stat-box"><div class="num">Sep 1-4</div><div class="lbl">Fecha de aplicación TEST 31 agosto 4 de septiembre 2026</div></div>
       </div>
     </div>
   </div>
@@ -560,8 +563,8 @@
       <!-- PRESENTACIÓN PRINCIPAL -->
       <div class="prose-card">
         <h2>📄 Presentación Institucional</h2>
-        <p>Con el propósito de que en los planteles se cuente con un diagnóstico de la situación académica en la que reciben a los estudiantes de nuevo ingreso egresados de la Educación Básica, la Dirección General del Bachillerato a través de la Dirección Académica propone la aplicación del instrumento de evaluación diagnóstica <strong>Test</strong> a los alumnos matrículados de nuevo ingreso en COBAED, con el objeto de establecer el grado o nivel de dominio de los aprendizajes adquiridos en educación básica.</p>
-        <p>Los materiales para orientar la aplicación (Guía de estudio, Manual del Responsable, Instrumentos Test y Postest, Hojas de respuesta, entre otros) se integrarán de forma paulatina en el apartado <strong>"Recursos"</strong> de este micrositio, en la medida en que la Dirección Académica del COBAED a traves del Departamento de Planeación Académica los proporcione.</p>
+        <p>Con el propósito de que en los planteles se cuente con un diagnóstico de la situación académica en la que reciben a los estudiantes de nuevo ingreso egresados de la Educación Básica, la Dirección General del Bachillerato a través de la Dirección Académica propone la aplicación del instrumento de evaluación diagnóstica <strong>Test</strong> a los alumnos matriculados de nuevo ingreso en COBAED, con el objeto de establecer el grado o nivel de dominio de los aprendizajes adquiridos en educación básica.</p>
+        <p>Los materiales para orientar la aplicación (Guía de estudio, Manual del Responsable, Instrumentos Test y Postest, Hojas de respuesta, entre otros) se integrarán de forma paulatina en el apartado <strong>"Recursos"</strong> de este micrositio, en la medida en que la Dirección Académica del COBAED a través del Departamento de Planeación Académica los proporcione.</p>
         <p>En colegiado, se analizarán los resultados para diseñar una <strong>estrategia de intervención programada</strong> a lo largo del semestre que aborde aprendizajes en los que el estudiantado presente deficiencias (tutorías grupales e individuales, orientación educativa, círculos de estudio y de lectura, talleres de comprensión lectora, entre otras).</p>
         <p>Es recomendable alentar al estudiantado a responder con <strong>honestidad</strong> en ambos instrumentos, con la finalidad de obtener resultados que reflejen su nivel académico real. Los resultados del Postest podrán considerarse para mejorar la calificación de alguna asignatura.</p>
       </div>
@@ -578,40 +581,32 @@
             <div style="display:flex;flex-direction:column;gap:.55rem;">
               <div style="display:flex;align-items:center;gap:.6rem;font-size:.82rem;">
                 <span style="width:28px;height:28px;border-radius:6px;background:#e0f2fe;display:flex;align-items:center;justify-content:center;font-size:.9rem;flex-shrink:0;">⚗️</span>
-                <div><strong style="color:var(--navy);font-size:.8rem;">Ciencias Naturales y Experimentales</strong><br><span style="color:var(--gray-400);font-size:.73rem;">Química y Física</span></div>
+                <div><strong style="color:var(--plumbago-dark);font-size:.8rem;">Ciencias Naturales y Experimentales</strong><br><span style="color:var(--gray-400);font-size:.73rem;">Química y Física</span></div>
               </div>
               <div style="display:flex;align-items:center;gap:.6rem;font-size:.82rem;">
                 <span style="width:28px;height:28px;border-radius:6px;background:#fce7f3;display:flex;align-items:center;justify-content:center;font-size:.9rem;flex-shrink:0;">🧠</span>
-                <div><strong style="color:var(--navy);font-size:.8rem;">Pensamiento Crítico Reflexivo</strong><br><span style="color:var(--gray-400);font-size:.73rem;">De lo individual a la colectividad</span></div>
+                <div><strong style="color:var(--plumbago-dark);font-size:.8rem;">Pensamiento Crítico Reflexivo</strong><br><span style="color:var(--gray-400);font-size:.73rem;">De lo individual a la colectividad</span></div>
               </div>
               <div style="display:flex;align-items:center;gap:.6rem;font-size:.82rem;">
                 <span style="width:28px;height:28px;border-radius:6px;background:#fef3c7;display:flex;align-items:center;justify-content:center;font-size:.9rem;flex-shrink:0;">📐</span>
-                <div><strong style="color:var(--navy);font-size:.8rem;">Matemáticas</strong><br><span style="color:var(--gray-400);font-size:.73rem;">Aritmética y lenguaje algebraico</span></div>
+                <div><strong style="color:var(--plumbago-dark);font-size:.8rem;">Matemáticas</strong><br><span style="color:var(--gray-400);font-size:.73rem;">Aritmética y lenguaje algebraico</span></div>
               </div>
               <div style="display:flex;align-items:center;gap:.6rem;font-size:.82rem;">
                 <span style="width:28px;height:28px;border-radius:6px;background:#dcfce7;display:flex;align-items:center;justify-content:center;font-size:.9rem;flex-shrink:0;">🌍</span>
-                <div><strong style="color:var(--navy);font-size:.8rem;">Ciencias Sociales</strong><br><span style="color:var(--gray-400);font-size:.73rem;">Historia, política y economía</span></div>
+                <div><strong style="color:var(--plumbago-dark);font-size:.8rem;">Ciencias Sociales</strong><br><span style="color:var(--gray-400);font-size:.73rem;">Historia, política y economía</span></div>
               </div>
               <div style="display:flex;align-items:center;gap:.6rem;font-size:.82rem;">
                 <span style="width:28px;height:28px;border-radius:6px;background:#ede9fe;display:flex;align-items:center;justify-content:center;font-size:.9rem;flex-shrink:0;">📖</span>
-                <div><strong style="color:var(--navy);font-size:.8rem;">Lenguaje</strong><br><span style="color:var(--gray-400);font-size:.73rem;">Lectura, escritura y comunicación</span></div>
+                <div><strong style="color:var(--plumbago-dark);font-size:.8rem;">Lenguaje</strong><br><span style="color:var(--gray-400);font-size:.73rem;">Lectura, escritura y comunicación</span></div>
               </div>
-
-
-
               <div style="display:flex;align-items:center;gap:.6rem;font-size:.82rem;">
-                <span style="width:28px;height:28px;border-radius:6px;background:#ede9fe;display:flex;align-items:center;justify-content:center;font-size:.9rem;flex-shrink:0;">📖</span>
-                <div><strong style="color:var(--navy);font-size:.8rem;">Informática</strong><br><span style="color:var(--gray-400);font-size:.73rem;">Lectura, escritura y comunicación</span></div>
+                <span style="width:28px;height:28px;border-radius:6px;background:#ede9fe;display:flex;align-items:center;justify-content:center;font-size:.9rem;flex-shrink:0;">💻</span>
+                <div><strong style="color:var(--plumbago-dark);font-size:.8rem;">Informática</strong><br><span style="color:var(--gray-400);font-size:.73rem;">Tecnologías de la información</span></div>
               </div>
-
               <div style="display:flex;align-items:center;gap:.6rem;font-size:.82rem;">
-                <span style="width:28px;height:28px;border-radius:6px;background:#ede9fe;display:flex;align-items:center;justify-content:center;font-size:.9rem;flex-shrink:0;">📖</span>
-                <div><strong style="color:var(--navy);font-size:.8rem;">Inglés</strong><br><span style="color:var(--gray-400);font-size:.73rem;">Lectura, escritura y comunicación</span></div>
+                <span style="width:28px;height:28px;border-radius:6px;background:#ede9fe;display:flex;align-items:center;justify-content:center;font-size:.9rem;flex-shrink:0;">🔤</span>
+                <div><strong style="color:var(--plumbago-dark);font-size:.8rem;">Inglés</strong><br><span style="color:var(--gray-400);font-size:.73rem;">Comprensión y comunicación básica</span></div>
               </div>
-
-
-
-
             </div>
           </div>
         </div>
@@ -622,7 +617,7 @@
             <h4>Accesos Rápidos</h4>
           </div>
           <div class="info-card-body" style="display:flex;flex-direction:column;gap:.6rem;padding:.9rem 1.1rem;">
-            <a href="https://ces.cobaed.mx/">
+            <a href="https://ces.cobaed.mx/" style="display:flex;align-items:center;gap:.6rem;text-decoration:none;">
               <span style="font-size:1rem;">🌐</span>
               <span style="font-size:.8rem;font-weight:600;color:var(--blue);">Registro ces.cobaed.mx en línea</span>
             </a>
@@ -675,7 +670,7 @@
               <li><div class="step-num">4</div><span>Aplicación de la evaluación diagnóstica <strong>Test</strong>.</span></li>
               <li><div class="step-num">5</div><span>Análisis de los resultados obtenidos con el Test.</span></li>
               <li><div class="step-num">6</div><span>Impartir DURANTE el Curso estrategias de nivelación de aprendizajes para el ciclo 2026–2027.</span></li>
-              <li><div class="step-num">7</div><span>Proceso de la evaluación al ingreso al termino del primer semestre  <strong>SEMESTRAL</strong>.</span></li>
+              <li><div class="step-num">7</div><span>Proceso de la evaluación al ingreso al término del primer semestre <strong>SEMESTRAL</strong>.</span></li>
               <li><div class="step-num">8</div><span>Análisis y difusión de los resultados.</span></li>
               <li><div class="step-num">9</div><span>Elaboración de la Estrategia de Mejora Educativa del plantel.</span></li>
             </ul>
@@ -691,7 +686,7 @@
               </div>
               <div style="background:#f0fdf4;border-radius:8px;padding:1rem;">
                 <div style="font-family:'Sora',sans-serif;font-weight:700;font-size:.82rem;color:var(--green);margin-bottom:.4rem;">▶️ DURANTE</div>
-                <p style="font-size:.85rem;color:var(--gray-600);line-height:1.6;">Aplicación del Test y las acciones de nivelación de aprendizajes atendiendo los tiros de presición identificados como areas de oportunidad especificas en los colegiados del plantel, con apoyo de areas de apoyo extracurriculares.</p>
+                <p style="font-size:.85rem;color:var(--gray-600);line-height:1.6;">Aplicación del Test y las acciones de nivelación de aprendizajes atendiendo los tiros de precisión identificados como áreas de oportunidad específicas en los colegiados del plantel, con apoyo de áreas de apoyo extracurriculares.</p>
               </div>
               <div style="background:#fff7ed;border-radius:8px;padding:1rem;">
                 <div style="font-family:'Sora',sans-serif;font-weight:700;font-size:.82rem;color:#c2410c;margin-bottom:.4rem;">⏩ DESPUÉS</div>
@@ -727,22 +722,14 @@
           <div class="card-header" style="background:linear-gradient(135deg,#7f1d1d,#dc2626);"><div class="icon">📖</div><h3>Lenguaje</h3></div>
           <div class="card-body"><p>Selecciona, organiza, interpreta y comparte información a través de la interacción con la lectura y la escritura.</p></div>
         </div>
-
-
         <div class="card">
-          <div class="card-header" style="background:linear-gradient(135deg,#7f1d1d,#dc2626);"><div class="icon">📖</div><h3>Informática</h3></div>
+          <div class="card-header" style="background:linear-gradient(135deg,#1e40af,#3b82f6);"><div class="icon">💻</div><h3>Informática</h3></div>
           <div class="card-body"><p>Selecciona, organiza, interpreta y comparte información a través de la interacción con la lectura y la escritura.</p></div>
         </div>
-
-
         <div class="card">
-          <div class="card-header" style="background:linear-gradient(135deg,#7f1d1d,#dc2626);"><div class="icon">📖</div><h3>Inglés</h3></div>
+          <div class="card-header" style="background:linear-gradient(135deg,#7c3aed,#a78bfa);"><div class="icon">🔤</div><h3>Inglés</h3></div>
           <div class="card-body"><p>Selecciona, organiza, interpreta y comparte información a través de la interacción con la lectura y la escritura.</p></div>
         </div>
-
-
-
-
       </div>
     </div>
 
@@ -765,11 +752,11 @@
           <div class="card-body">
             <div style="display:flex;flex-direction:column;gap:.8rem;">
               <div style="border:1px solid var(--gray-200);border-radius:8px;padding:.9rem;">
-                <div style="font-family:'Sora',sans-serif;font-weight:600;font-size:.85rem;color:var(--navy);margin-bottom:.3rem;">📊 Escala de Autoestima de Rosenberg</div>
+                <div style="font-family:'Sora',sans-serif;font-weight:600;font-size:.85rem;color:var(--plumbago-dark);margin-bottom:.3rem;">📊 Escala de Autoestima de Rosenberg</div>
                 <p style="font-size:.82rem;color:var(--gray-600);">Instrumento validado internacionalmente para medir el nivel de autoestima del estudiante como factor de éxito académico.</p>
               </div>
               <div style="border:1px solid var(--gray-200);border-radius:8px;padding:.9rem;">
-                <div style="font-family:'Sora',sans-serif;font-weight:600;font-size:.85rem;color:var(--navy);margin-bottom:.3rem;">📋 Cuestionario Contexto Social y Académico</div>
+                <div style="font-family:'Sora',sans-serif;font-weight:600;font-size:.85rem;color:var(--plumbago-dark);margin-bottom:.3rem;">📋 Cuestionario Contexto Social y Académico</div>
                 <p style="font-size:.82rem;color:var(--gray-600);">Recopila datos socioeconómicos y académicos para elaborar un diagnóstico integral de la población de nuevo ingreso.</p>
               </div>
             </div>
@@ -786,31 +773,15 @@
           <div class="card-body">
             <span class="pill pill-green" style="margin-bottom:.75rem;">Recomendada</span>
             <ul class="steps">
-              <li><div class="step-num">1</div><span>Programar fecha(s) y hora(s) de aplicación desde agosto 2026 en el sitio <a href="https://script.google.com/a/macros/cobaed.mx/s/AKfycbzAXA2N7lKQv7G2tDAx0KP2aO_Od5tjLGPG5otuH41yWa_c4I9wY7fUZaH63Y823-HdoQ/exec"> PROGRAMACIÓN. </a>. </span></li>
-              <li><div class="step-num">2</div><span>Revisar que los estudiantes tengan el acceso vigente a su correo institucional dominio @cobaed.mx. </a></span></li>
-              <li><div class="step-num">3</div><span>Preparar las listas de asistencia para el TEST con la hoja de control. La Dirección Academica validará programación según disponibilidad y actividades.</span></li>
+              <li><div class="step-num">1</div><span>Programar fecha(s) y hora(s) de aplicación desde agosto 2026 en el sitio <a href="https://script.google.com/a/macros/cobaed.mx/s/AKfycbzAXA2N7lKQv7G2tDAx0KP2aO_Od5tjLGPG5otuH41yWa_c4I9wY7fUZaH63Y823-HdoQ/exec"> PROGRAMACIÓN</a>.</span></li>
+              <li><div class="step-num">2</div><span>Revisar que los estudiantes tengan el acceso vigente a su correo institucional dominio @cobaed.mx.</span></li>
+              <li><div class="step-num">3</div><span>Preparar las listas de asistencia para el TEST con la hoja de control. La Dirección Académica validará programación según disponibilidad y actividades.</span></li>
             </ul>
             <div class="notice" style="margin-top:.75rem;"><span class="icon">⚠️</span>Disponible a partir del 31 de agosto 2026 en el sitio ces.cobaed.mx.</div>
           </div>
         </div>
-       
-
-<!-- 
-     <div class="card">
-          <div class="card-header" style="background:linear-gradient(135deg,#7c2d12,#ea580c);"><div class="icon">🖨️</div><h3>Versión Impresa</h3></div>
-          <div class="card-body">
-            <span class="pill pill-gray" style="margin-bottom:.75rem;">Opción alternativa</span>
-            <p>Para planteles con limitaciones tecnológicas. Consultar los lineamientos específicos en el Manual del Responsable EDIEMS-COBAED 2026–2027 para el proceso de captura y reporte de resultados.</p>
-          </div>
-        </div>-->
       </div>
-
-
-
-
-    </div> 
-
-
+    </div>
 
     <!-- TAB: EMISIÓN DE RESULTADOS -->
     <div id="tab-resultados-test" class="tab-content">
@@ -828,19 +799,19 @@
             <div style="display:grid;grid-template-columns:1fr 1fr;gap:.7rem;">
               <div style="text-align:center;padding:.75rem;background:#eff6ff;border-radius:8px;">
                 <div style="font-size:1.5rem;margin-bottom:.3rem;">👨‍🏫</div>
-                <div style="font-size:.78rem;font-weight:600;color:var(--navy);">Docentes</div>
+                <div style="font-size:.78rem;font-weight:600;color:var(--plumbago-dark);">Docentes</div>
               </div>
               <div style="text-align:center;padding:.75rem;background:#f0fdf4;border-radius:8px;">
                 <div style="font-size:1.5rem;margin-bottom:.3rem;">🏛️</div>
-                <div style="font-size:.78rem;font-weight:600;color:var(--navy);">Autoridades</div>
+                <div style="font-size:.78rem;font-weight:600;color:var(--plumbago-dark);">Autoridades</div>
               </div>
               <div style="text-align:center;padding:.75rem;background:#fff7ed;border-radius:8px;">
                 <div style="font-size:1.5rem;margin-bottom:.3rem;">👨‍👩‍👧</div>
-                <div style="font-size:.78rem;font-weight:600;color:var(--navy);">Padres de Familia</div>
+                <div style="font-size:.78rem;font-weight:600;color:var(--plumbago-dark);">Padres de Familia</div>
               </div>
               <div style="text-align:center;padding:.75rem;background:#f5f3ff;border-radius:8px;">
                 <div style="font-size:1.5rem;margin-bottom:.3rem;">🎓</div>
-                <div style="font-size:.78rem;font-weight:600;color:var(--navy);">Estudiantes</div>
+                <div style="font-size:.78rem;font-weight:600;color:var(--plumbago-dark);">Estudiantes</div>
               </div>
             </div>
           </div>
@@ -862,7 +833,7 @@
         <div class="card-header"><div class="icon">🔍</div><h3>Elaboración del Diagnóstico</h3></div>
         <div class="card-body">
           <p style="margin-bottom:1rem;">Una vez concluidas las etapas previas, se deben organizar y analizar los resultados del instrumento Test, así como el promedio obtenido en secundaria, para elaborar un diagnóstico que dé cuenta de las condiciones en que se recibe a la población de nuevo ingreso.</p>
-          <p style="font-family:'Sora',sans-serif;font-weight:600;font-size:.82rem;color:var(--navy);margin-bottom:.5rem;">El diagnóstico permite identificar:</p>
+          <p style="font-family:'Sora',sans-serif;font-weight:600;font-size:.82rem;color:var(--plumbago-dark);margin-bottom:.5rem;">El diagnóstico permite identificar:</p>
           <div style="display:flex;flex-direction:column;gap:.6rem;">
             <div style="background:#eff6ff;border-radius:7px;padding:.8rem;font-size:.85rem;color:var(--gray-700);border-left:3px solid var(--blue);">
               <strong>①</strong> Aprendizajes y habilidades donde la población obtuvo resultados desfavorables que requieren fortalecimiento → Estrategia de Mejora Educativa.
@@ -877,7 +848,7 @@
         <div class="card-header"><div class="icon">📈</div><h3>Estrategia de Mejora Educativa</h3></div>
         <div class="card-body">
           <p style="margin-bottom:1rem;">Directivos y grupos colegiados o multidisciplinarios elaborarán de manera conjunta una Estrategia de Mejora Educativa para implementarla durante el semestre con la participación de todas las áreas del plantel.</p>
-          <p style="font-family:'Sora',sans-serif;font-weight:600;font-size:.82rem;color:var(--navy);margin-bottom:.6rem;">Acciones sugeridas de intervención:</p>
+          <p style="font-family:'Sora',sans-serif;font-weight:600;font-size:.82rem;color:var(--plumbago-dark);margin-bottom:.6rem;">Acciones sugeridas de intervención:</p>
           <div style="display:flex;flex-wrap:wrap;gap:.4rem;">
             <span class="pill pill-blue">👥 Tutorías grupales</span>
             <span class="pill pill-blue">👤 Tutorías individuales</span>
@@ -897,7 +868,7 @@
         <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.1rem;">
           <div>
             <p style="margin-bottom:.75rem;">La evaluación del Postest podrá programarse conforme a las fechas establecidas en el calendario oficial para el término del semestre (Programa de actividades académico-administrativas) y el calendario emitido por la Dirección General.</p>
-            <p>Cada plantel aplicará la evaluación al final del semestre, según lo programado por Dirección General, con el fin de crevisar el vance con resultados que evidencien lo real en el desempeño de los estudiantes respecto a las áreas evaluadas.</p>
+            <p>Cada plantel aplicará la evaluación al final del semestre, según lo programado por Dirección General, con el fin de revisar el avance con resultados que evidencien lo real en el desempeño de los estudiantes respecto a las áreas evaluadas.</p>
           </div>
           <div style="background:linear-gradient(135deg,#fef2f2,#fef9ec);border:1px solid #fecaca;border-radius:10px;padding:1.25rem;text-align:center;">
             <div style="font-size:2rem;margin-bottom:.4rem;">📅</div>
@@ -921,7 +892,6 @@
     <div class="notice"><span class="icon">ℹ️</span>Los comunicados se actualizan de acuerdo a las circulares emitidas por la Dirección General y el Departamento de Planeación Académica.</div>
 
     <div class="comms-grid" id="comunicados-list">
-      <!-- Estático: la convocatoria real -->
       <div class="comm-item">
         <div class="comm-dot">📣</div>
         <div class="comm-body">
@@ -958,7 +928,7 @@
     <div class="section-title">📁 Recursos y Descargables</div>
     <div class="section-title-line"></div>
 
-    <div class="notice"><span class="icon">📌</span>Los materiales se integran de forma paulatina conforme la Dirección Académica a traves del Departamento de Planeación Academica. Nuevos recursos serán publicados en este espacio durante el semestre.</div>
+    <div class="notice"><span class="icon">📌</span>Los materiales se integran de forma paulatina conforme la Dirección Académica a través del Departamento de Planeación Académica. Nuevos recursos serán publicados en este espacio durante el semestre.</div>
 
     <div style="display:flex;flex-direction:column;gap:.75rem;" id="recursos-list">
       <div class="resource-card">
@@ -966,7 +936,7 @@
           <div class="resource-icon pdf">📕</div>
           <div class="resource-meta">
             <h4>EDIEMS-COBAED Guía de Estudio 2026</h4>
-            <p>Guía para estudiantes de nuevo ingreso </p>
+            <p>Guía para estudiantes de nuevo ingreso</p>
           </div>
           <a class="resource-btn" href="https://drive.google.com/file/d/1N_elbZqdnqmy5n7jrxeduHr3r78OeL2c/view?usp=drive_link" target="_blank">⬇ Descargar</a>
         </div>
@@ -976,7 +946,7 @@
           <div class="resource-icon pdf">📗</div>
           <div class="resource-meta">
             <h4>Manual del Responsable EDIEMS-COBAED 2026</h4>
-            <p>Instrucciones para el responsable de plantel </p>
+            <p>Instrucciones para el responsable de plantel</p>
           </div>
           <a class="resource-btn" href="https://drive.google.com/file/d/1nR37NhmwJl6PFb-cp_n3U9klj5toWi7P/view?usp=drive_link" target="_blank">⬇ Descargar</a>
         </div>
@@ -998,7 +968,7 @@
             <h4>Manual de Difusión de Resultados 2026–2027</h4>
             <p>Disponible a partir del 15 de septiembre de 2026</p>
           </div>
-         <span style="display:inline-flex;align-items:center;gap:.35rem;padding:.5rem 1rem;border-radius:7px;background:var(--gray-200);color:var(--gray-400);font-family:'Sora',sans-serif;font-size:.78rem;font-weight:600;white-space:nowrap;">⏳ Próximamente</span>
+          <span style="display:inline-flex;align-items:center;gap:.35rem;padding:.5rem 1rem;border-radius:7px;background:var(--gray-200);color:var(--gray-400);font-family:'Sora',sans-serif;font-size:.78rem;font-weight:600;white-space:nowrap;">⏳ Próximamente</span>
         </div>
       </div>
       <div class="resource-card" style="opacity:.65;">
@@ -1059,26 +1029,17 @@
           <div class="label">Org.</div>
           <div class="value">COBAED — Colegio de Bachilleres del Estado de Durango</div>
         </div>
-<!--     <div style="margin-top:1.25rem;padding-top:1rem;border-top:1px solid var(--gray-100);">
-          <p style="font-size:.82rem;color:var(--gray-600);margin-bottom:.75rem;">Formularios de envío de información:</p>
-          <div style="display:flex;flex-direction:column;gap:.5rem;">
-            <a href="https://forms.gle/xnff7xFA5QUYbyEJ7" target="_blank" style="font-size:.8rem;color:var(--blue);text-decoration:none;display:flex;align-items:center;gap:.4rem;">📋 Reporte Comité PAEC</a>
-            <a href="https://forms.gle/ZjKC2inB9ZirjCDU8" target="_blank" style="font-size:.8rem;color:var(--blue);text-decoration:none;display:flex;align-items:center;gap:.4rem;">📋 Diagnóstico Integral</a>
-            <a href="https://forms.gle/pzNbcwPhQSockmo47" target="_blank" style="font-size:.8rem;color:var(--blue);text-decoration:none;display:flex;align-items:center;gap:.4rem;">📋 Estrategias Colegiadas</a>
-          </div>
-        </div> -->
-
       </div>
       <div class="contact-card">
         <h3>🔗 Plataformas y Sistemas</h3>
         <div style="display:flex;flex-direction:column;gap:.75rem;">
           <a href="https://ces.cobaed.mx" target="_blank" style="display:flex;gap:.75rem;align-items:center;padding:.85rem;border:1px solid var(--gray-200);border-radius:8px;text-decoration:none;transition:background .2s;" onmouseover="this.style.background='var(--gray-50)'" onmouseout="this.style.background='transparent'">
             <span style="width:38px;height:38px;background:#eff6ff;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;">🖥️</span>
-            <div><div style="font-size:.85rem;font-weight:600;color:var(--navy);">Plataforma CES COBAED</div><div style="font-size:.75rem;color:var(--gray-400);">ces.cobaed.mx</div></div>
+            <div><div style="font-size:.85rem;font-weight:600;color:var(--plumbago-dark);">Plataforma CES COBAED</div><div style="font-size:.75rem;color:var(--gray-400);">ces.cobaed.mx</div></div>
           </a>
           <a href="https://forms.gle/2Xi1ubVD1w3wgCkF7" target="_blank" style="display:flex;gap:.75rem;align-items:center;padding:.85rem;border:1px solid var(--gray-200);border-radius:8px;text-decoration:none;transition:background .2s;" onmouseover="this.style.background='var(--gray-50)'" onmouseout="this.style.background='transparent'">
             <span style="width:38px;height:38px;background:#f0fdf4;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;">🌐</span>
-            <div><div style="font-size:.85rem;font-weight:600;color:var(--navy);"> Instrumento de Evaluación</div><div style="font-size:.75rem;color:var(--gray-400);">TEST</div></div>
+            <div><div style="font-size:.85rem;font-weight:600;color:var(--plumbago-dark);">Instrumento de Evaluación</div><div style="font-size:.75rem;color:var(--gray-400);">TEST</div></div>
           </a>
         </div>
       </div>
@@ -1099,7 +1060,7 @@
 
   <div class="confidential-footer">
     <strong>AVISO DE CONFIDENCIALIDAD</strong><br>
-    De conformidad con lo establecido en el inciso a del artículo 57 del “Acuerdo por el que se emiten las políticas y disposiciones para impulsar el uso y aprovechamiento de la informática, el gobierno digital, las tecnologías de la información y comunicación, y la seguridad de la información en la Administración Pública Federal”, se informa que este mensaje y los datos adjuntos son para uso exclusivo de la persona o entidad a la que expresamente ha sido enviada, el cual puede contener información que por su naturaleza deba ser considerada como CONFIDENCIAL o RESERVADA, en términos de lo dispuesto en la Ley General de Transparencia y Acceso a la Información Pública y en la Ley General de Protección de Datos Personales en Posesión de Sujetos Obligados. Si por error ha recibido esta comunicación: 1) queda estrictamente prohibido la revelación, retransmisión, difusión, copia, impresión, modificación, alteración en toda o en alguna de sus partes o el uso de la información contenida en el archivo electrónico sea diverso al objeto por el cual se emitió; 2) notifíquelo al remitente; y 3) bórrelo de inmediato y en forma permanente, junto con cualquier copia digital o impresa, así como cualquier archivo anexo al mismo.
+    De conformidad con lo establecido en el inciso a del artículo 57 del "Acuerdo por el que se emiten las políticas y disposiciones para impulsar el uso y aprovechamiento de la informática, el gobierno digital, las tecnologías de la información y comunicación, y la seguridad de la información en la Administración Pública Federal", se informa que este mensaje y los datos adjuntos son para uso exclusivo de la persona o entidad a la que expresamente ha sido enviada, el cual puede contener información que por su naturaleza deba ser considerada como CONFIDENCIAL o RESERVADA, en términos de lo dispuesto en la Ley General de Transparencia y Acceso a la Información Pública y en la Ley General de Protección de Datos Personales en Posesión de Sujetos Obligados. Si por error ha recibido esta comunicación: 1) queda estrictamente prohibido la revelación, retransmisión, difusión, copia, impresión, modificación, alteración en toda o en alguna de sus partes o el uso de la información contenida en el archivo electrónico sea diverso al objeto por el cual se emitió; 2) notifíquelo al remitente; y 3) bórrelo de inmediato y en forma permanente, junto con cualquier copia digital o impresa, así como cualquier archivo anexo al mismo.
   </div>
 </footer>
 
@@ -1156,7 +1117,6 @@ function loadResults() {
       renderResults(data);
     })
     .catch(() => {
-      // Mostrar datos de demostración cuando el endpoint no esté disponible
       resultsLoaded = true;
       renderResults(getDemoData());
     });
@@ -1194,11 +1154,11 @@ function renderResults(data) {
 
   let areasHTML = (data.areas || []).map(a => `
     <div style="display:flex;align-items:center;gap:1rem;padding:.75rem 0;border-bottom:1px solid var(--gray-100);">
-      <div style="flex:1;font-size:.88rem;font-weight:500;color:var(--navy);">${a.nombre}</div>
+      <div style="flex:1;font-size:.88rem;font-weight:500;color:var(--plumbago-dark);">${a.nombre}</div>
       <div style="width:120px;background:var(--gray-100);border-radius:999px;height:8px;overflow:hidden;">
         <div style="width:${(a.promedio/10)*100}%;height:100%;background:${a.promedio < 6 ? '#ef4444' : a.promedio < 7 ? '#f59e0b' : '#10b981'};border-radius:999px;"></div>
       </div>
-      <div style="font-family:'Sora',sans-serif;font-weight:700;font-size:.95rem;color:var(--navy);min-width:32px;text-align:right;">${a.promedio}</div>
+      <div style="font-family:'Sora',sans-serif;font-weight:700;font-size:.95rem;color:var(--plumbago-dark);min-width:32px;text-align:right;">${a.promedio}</div>
       <span style="padding:.2rem .6rem;border-radius:4px;font-size:.7rem;font-weight:600;background:${nivelColor[a.nivel]};color:${nivelText[a.nivel]};font-family:'Sora',sans-serif;white-space:nowrap;">${nivelLabel[a.nivel]}</span>
     </div>
   `).join('');
@@ -1217,14 +1177,14 @@ function renderResults(data) {
   container.innerHTML = `
     <div style="padding:1.25rem;border-bottom:1px solid var(--gray-100);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
       <div>
-        <div style="font-family:'Sora',sans-serif;font-weight:700;font-size:.95rem;color:var(--navy);">Diagnóstico Inicial — Semestre ${data.semestre || '2026 A'}</div>
+        <div style="font-family:'Sora',sans-serif;font-weight:700;font-size:.95rem;color:var(--plumbago-dark);">Diagnóstico Inicial — Semestre ${data.semestre || '2026 A'}</div>
         <div style="font-size:.75rem;color:var(--gray-400);margin-top:.15rem;">Actualizado: ${data.actualizacion || new Date().toLocaleDateString('es-MX')} ${isDemoData ? '· (datos de demostración)' : ''}</div>
       </div>
       <button onclick="resultsLoaded=false;loadResults();" style="font-size:.78rem;background:var(--gray-100);border:none;border-radius:6px;padding:.4rem .85rem;cursor:pointer;font-family:'Sora',sans-serif;font-weight:600;color:var(--gray-600);">↻ Actualizar</button>
     </div>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1rem;padding:1.25rem;">
       <div style="text-align:center;padding:1rem;background:var(--gray-50);border-radius:10px;">
-        <div style="font-family:'Sora',sans-serif;font-size:1.8rem;font-weight:700;color:var(--navy);">${data.resumen?.planteles || '—'}</div>
+        <div style="font-family:'Sora',sans-serif;font-size:1.8rem;font-weight:700;color:var(--plumbago-dark);">${data.resumen?.planteles || '—'}</div>
         <div style="font-size:.75rem;color:var(--gray-400);margin-top:.2rem;">Planteles participantes</div>
       </div>
       <div style="text-align:center;padding:1rem;background:var(--gray-50);border-radius:10px;">
@@ -1237,14 +1197,21 @@ function renderResults(data) {
       </div>
     </div>
     <div style="padding:0 1.25rem 1.25rem;">
-      <div style="font-family:'Sora',sans-serif;font-weight:700;font-size:.85rem;color:var(--navy);margin-bottom:.75rem;">Resultados por Área Evaluada</div>
+      <div style="font-family:'Sora',sans-serif;font-weight:700;font-size:.85rem;color:var(--plumbago-dark);margin-bottom:.75rem;">Resultados por Área Evaluada</div>
       ${areasHTML || '<p style="font-size:.85rem;color:var(--gray-400);">Sin datos disponibles aún.</p>'}
     </div>
     <div style="padding:0 1.25rem 1.5rem;" id="results-table-wrap">
-      <div style="font-family:'Sora',sans-serif;font-weight:700;font-size:.85rem;color:var(--navy);margin-bottom:.75rem;">Participación por Plantel</div>
+      <div style="font-family:'Sora',sans-serif;font-weight:700;font-size:.85rem;color:var(--plumbago-dark);margin-bottom:.75rem;">Participación por Plantel</div>
       <div style="overflow-x:auto;">
-        <table>
-          <thead><tr><th>Plantel</th><th>Inscritos</th><th>Evaluados</th><th>Participación</th></tr></thead>
+        <table style="width:100%;border-collapse:collapse;font-size:.85rem;">
+          <thead>
+            <tr style="background:var(--gray-50);border-bottom:2px solid var(--gray-200);">
+              <th style="padding:.6rem .8rem;text-align:left;font-weight:600;color:var(--plumbago-dark);">Plantel</th>
+              <th style="padding:.6rem .8rem;text-align:center;font-weight:600;color:var(--plumbago-dark);">Inscritos</th>
+              <th style="padding:.6rem .8rem;text-align:center;font-weight:600;color:var(--plumbago-dark);">Evaluados</th>
+              <th style="padding:.6rem .8rem;text-align:center;font-weight:600;color:var(--plumbago-dark);">Participación</th>
+            </tr>
+          </thead>
           <tbody>${plantelesHTML || '<tr><td colspan="4" style="text-align:center;color:var(--gray-400);padding:1.5rem;">Sin datos disponibles</td></tr>'}</tbody>
         </table>
       </div>
