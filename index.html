@@ -371,6 +371,71 @@
   }
   .resource-btn:hover { background: var(--plumbago-light); }
 
+  /* ── REPORTE DE INCIDENCIAS ── */
+  .incidencias-hero {
+    background: linear-gradient(135deg, var(--plumbago-dark) 0%, var(--plumbago) 55%, #7f1d1d 130%);
+    border-radius: var(--radius); padding: 1.75rem 1.9rem; color: var(--white);
+    box-shadow: var(--shadow); margin-bottom: 1.5rem; position: relative; overflow: hidden;
+  }
+  .incidencias-hero::after {
+    content: ""; position: absolute; top: -40%; right: -10%; width: 260px; height: 260px;
+    background: radial-gradient(circle, rgba(245,158,11,.22) 0%, transparent 70%);
+  }
+  .incidencias-hero h3 {
+    font-family: 'Sora', sans-serif; font-size: 1.15rem; font-weight: 700; margin-bottom: .5rem;
+    position: relative; z-index: 1;
+  }
+  .incidencias-hero p {
+    font-size: .88rem; line-height: 1.7; color: rgba(255,255,255,.88); max-width: 640px;
+    position: relative; z-index: 1;
+  }
+  .feature-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: .9rem; margin: 1.25rem 0 1.75rem;
+  }
+  .feature-item {
+    background: var(--white); border-radius: var(--radius);
+    border: 1px solid var(--gray-200); box-shadow: var(--shadow-sm);
+    padding: 1.1rem 1.15rem; display: flex; gap: .75rem; align-items: flex-start;
+    transition: box-shadow .25s, transform .2s;
+  }
+  .feature-item:hover { box-shadow: var(--shadow); transform: translateY(-2px); }
+  .feature-item .fi-icon {
+    width: 38px; height: 38px; border-radius: 9px; flex-shrink: 0;
+    background: linear-gradient(135deg, var(--accent), #f97316);
+    display: flex; align-items: center; justify-content: center; font-size: 1.05rem; color: white;
+  }
+  .feature-item p {
+    font-size: .82rem; color: var(--gray-600); line-height: 1.55;
+  }
+  .incidencias-cta-wrap {
+    display: flex; flex-direction: column; align-items: center; text-align: center;
+    gap: .85rem; padding: 2rem 1.5rem; border-radius: var(--radius);
+    background: linear-gradient(135deg, #fff7ed, #fef3c7);
+    border: 1px solid var(--accent-pale);
+  }
+  .incidencias-cta-wrap span.tag {
+    font-family: 'Sora', sans-serif; font-size: .75rem; font-weight: 700;
+    letter-spacing: .06em; text-transform: uppercase; color: #b45309;
+  }
+  .incidencias-cta-btn {
+    display: inline-flex; align-items: center; gap: .6rem;
+    padding: 1rem 2.2rem; border-radius: 999px;
+    background: linear-gradient(135deg, var(--accent) 0%, #f97316 60%, var(--red) 130%);
+    background-size: 200% 200%;
+    color: var(--white); font-family: 'Sora', sans-serif; font-size: .98rem; font-weight: 700;
+    text-decoration: none; box-shadow: 0 8px 24px rgba(245,158,11,.35), 0 2px 8px rgba(0,0,0,.1);
+    transition: transform .25s ease, box-shadow .25s ease, background-position .4s ease;
+    letter-spacing: .01em;
+  }
+  .incidencias-cta-btn:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 12px 32px rgba(245,158,11,.45), 0 4px 12px rgba(0,0,0,.14);
+    background-position: 100% 100%;
+  }
+  .incidencias-cta-btn .arrow-ico { transition: transform .25s ease; }
+  .incidencias-cta-btn:hover .arrow-ico { transform: translateX(4px); }
+
   /* ── COMUNICADOS ── */
   .comms-grid { display: flex; flex-direction: column; gap: 1rem; }
   .comm-item {
@@ -531,9 +596,10 @@
       <button class="nav-link active" onclick="showSection('inicio')">🏠 Inicio</button>
       <button class="nav-link" onclick="showSection('estrategia')">📋 Estrategia</button>
       <button class="nav-link" onclick="showSection('materias')">📚 Materias</button>
-      <button class="nav-link" onclick="showSection('propedeutico')">📘 Nivelación de Aprendizajes</button>
+      <button class="nav-link" onclick="showSection('propedeutico')">📚 Nivelación de Aprendizajes</button>
       <button class="nav-link" onclick="showSection('comunicados')">📢 Comunicados</button>
       <button class="nav-link" onclick="showSection('recursos')">📁 Recursos</button>
+      <button class="nav-link" onclick="showSection('incidencias')">🚨 Reporte de Incidencias</button>
       <button class="nav-link" onclick="showSection('resultados')">📊 Resultados</button>
       <button class="nav-link" onclick="showSection('contacto')">✉️ Contacto</button>
     </nav>
@@ -564,7 +630,7 @@
       <!-- PRESENTACIÓN PRINCIPAL -->
       <div class="prose-card">
         <h2>📄 Presentación Institucional</h2>
-        <p>Con el propósito de que en los planteles se cuente con un diagnóstico de la situación académica en la que reciben a los estudiantes de nuevo ingreso egresados de la Educación Básica, al Colegio de Bachilleres del estado de Durango a través de la Dirección Académica propone la aplicación del instrumento de evaluación diagnóstica <strong>Test</strong> a los alumnos matriculados de nuevo ingreso en COBAED, con el objeto de establecer el grado o nivel de dominio de los aprendizajes adquiridos en educación básica.</p>
+        <p>Con el propósito de que en los planteles se cuente con un diagnóstico de la situación académica en la que reciben a los estudiantes de nuevo ingreso egresados de la Educación Básica, la Dirección General del Bachillerato a través de la Dirección Académica propone la aplicación del instrumento de evaluación diagnóstica <strong>Test</strong> a los alumnos matriculados de nuevo ingreso en COBAED, con el objeto de establecer el grado o nivel de dominio de los aprendizajes adquiridos en educación básica.</p>
         <p>Los materiales para orientar la aplicación (Guía de estudio, Manual del Responsable, Instrumentos Test y Postest, Hojas de respuesta, entre otros) se integrarán de forma paulatina en el apartado <strong>"Recursos"</strong> de este micrositio, en la medida en que la Dirección Académica del COBAED a través del Departamento de Planeación Académica los proporcione.</p>
         <p>En colegiado, se analizarán los resultados para diseñar una <strong>estrategia de intervención programada</strong> a lo largo del semestre que aborde aprendizajes en los que el estudiantado presente deficiencias (tutorías grupales e individuales, orientación educativa, círculos de estudio y de lectura, talleres de comprensión lectora, entre otras).</p>
         <p>Es recomendable alentar al estudiantado a responder con <strong>honestidad</strong> en ambos instrumentos, con la finalidad de obtener resultados que reflejen su nivel académico real. Los resultados del Postest podrán considerarse para mejorar la calificación de alguna asignatura.</p>
@@ -618,17 +684,17 @@
             <h4>Accesos Rápidos</h4>
           </div>
           <div class="info-card-body" style="display:flex;flex-direction:column;gap:.6rem;padding:.9rem 1.1rem;">
-            <a href="https://script.google.com/a/macros/cobaed.mx/s/AKfycbz9s4dLNlyoKiQMQy-ibthu7mr0EbzKJtNiI0UYa9vRtmqdHNlSimScRe_hGnoSNWHEqA/exec" style="display:flex;align-items:center;gap:.6rem;text-decoration:none;">
+            <a href="https://ces.cobaed.mx/" style="display:flex;align-items:center;gap:.6rem;text-decoration:none;">
               <span style="font-size:1rem;">🌐</span>
-              <span style="font-size:.8rem;font-weight:600;color:var(--blue);">Registro de la PROGRAMACIÓN</span>
+              <span style="font-size:.8rem;font-weight:600;color:var(--blue);">Registro ces.cobaed.mx en línea</span>
             </a>
-            <a href="https://drive.google.com/file/d/1yns1K-9W47V0TO8Q2UtlihF3u9LrwZZr/view?usp=drive_link" target="_blank" style="display:flex;align-items:center;gap:.6rem;padding:.6rem .8rem;border-radius:7px;background:#fef9ec;border:1px solid #fde68a;text-decoration:none;transition:background .2s;" onmouseover="this.style.background='#fef3c7'" onmouseout="this.style.background='#fef9ec'">
+            <a href="https://drive.google.com/file/d/1N_elbZqdnqmy5n7jrxeduHr3r78OeL2c/view?usp=drive_link" target="_blank" style="display:flex;align-items:center;gap:.6rem;padding:.6rem .8rem;border-radius:7px;background:#fef9ec;border:1px solid #fde68a;text-decoration:none;transition:background .2s;" onmouseover="this.style.background='#fef3c7'" onmouseout="this.style.background='#fef9ec'">
               <span style="font-size:1rem;">📕</span>
-              <span style="font-size:.8rem;font-weight:600;color:#b45309;">Guía para DOCENTE Aplicador </span>
+              <span style="font-size:.8rem;font-weight:600;color:#b45309;">Guía EDIEMS-COBAED 2026</span>
             </a>
-            <a href="https://drive.google.com/file/d/1KMPVR1swDw2rWgT2q96eLF2Cajmhe2Jz/view?usp=drive_link"_blank" style="display:flex;align-items:center;gap:.6rem;padding:.6rem .8rem;border-radius:7px;background:#f0fdf4;border:1px solid #bbf7d0;text-decoration:none;transition:background .2s;" onmouseover="this.style.background='#dcfce7'" onmouseout="this.style.background='#f0fdf4'">
+            <a href="https://drive.google.com/file/d/1nR37NhmwJl6PFb-cp_n3U9klj5toWi7P/view?usp=drive_link" target="_blank" style="display:flex;align-items:center;gap:.6rem;padding:.6rem .8rem;border-radius:7px;background:#f0fdf4;border:1px solid #bbf7d0;text-decoration:none;transition:background .2s;" onmouseover="this.style.background='#dcfce7'" onmouseout="this.style.background='#f0fdf4'">
               <span style="font-size:1rem;">📗</span>
-              <span style="font-size:.8rem;font-weight:600;color:var(--green);">Manual para el Coordinador de Aplicación </span>
+              <span style="font-size:.8rem;font-weight:600;color:var(--green);">Manual del Responsable APLICADOR DEL TEST</span>
             </a>
             <button onclick="showSection('resultados')" style="display:flex;align-items:center;gap:.6rem;padding:.6rem .8rem;border-radius:7px;background:#f5f3ff;border:1px solid #ddd6fe;cursor:pointer;transition:background .2s;width:100%;" onmouseover="this.style.background='#ede9fe'" onmouseout="this.style.background='#f5f3ff'">
               <span style="font-size:1rem;">📊</span>
@@ -699,7 +765,8 @@
       </div>
     </div>
 
-    <!-- TAB: PROPÓSITO -->
+   
+<!-- TAB: PROPÓSITO -->
     <div id="tab-proposito" class="tab-content">
       <div class="notice"><span class="icon">📌</span>La función diagnóstica de la evaluación <strong>no</strong> es enjuiciar o etiquetar al estudiantado, ni servir como elemento de discriminación o falta a sus derechos humanos.</div>
       <div class="grid-3">
@@ -734,6 +801,9 @@
       </div>
     </div>
 
+
+
+
     <!-- TAB: APLICACIÓN DEL TEST -->
     <div id="tab-aplicacion" class="tab-content">
       <div class="grid-2">
@@ -748,10 +818,6 @@
             </ul>
           </div>
         </div>
-
-
-
-
         <div class="card">
           <div class="card-header"><div class="icon">🔍</div><h3>Instrumentos Complementarios</h3></div>
           <div class="card-body">
@@ -770,8 +836,6 @@
       </div>
     </div>
 
-
-
     <!-- TAB: VERSIONES -->
     <div id="tab-versiones" class="tab-content">
       <div class="grid-3">
@@ -780,7 +844,7 @@
           <div class="card-body">
             <span class="pill pill-green" style="margin-bottom:.75rem;">Recomendada</span>
             <ul class="steps">
-              <li><div class="step-num">1</div><span>Programar fecha(s) y hora(s) de aplicación desde agosto 2026 en el sitio <a href="https://script.google.com/a/macros/cobaed.mx/s/AKfycbz9s4dLNlyoKiQMQy-ibthu7mr0EbzKJtNiI0UYa9vRtmqdHNlSimScRe_hGnoSNWHEqA/exec"> PROGRAMACIÓN</a>.</span></li>
+              <li><div class="step-num">1</div><span>Programar fecha(s) y hora(s) de aplicación desde agosto 2026 en el sitio <a href="https://script.google.com/a/macros/cobaed.mx/s/AKfycbzAXA2N7lKQv7G2tDAx0KP2aO_Od5tjLGPG5otuH41yWa_c4I9wY7fUZaH63Y823-HdoQ/exec"> PROGRAMACIÓN</a>.</span></li>
               <li><div class="step-num">2</div><span>Revisar que los estudiantes tengan el acceso vigente a su correo institucional dominio @cobaed.mx.</span></li>
               <li><div class="step-num">3</div><span>Preparar las listas de asistencia para el TEST con la hoja de control. La Dirección Académica validará programación según disponibilidad y actividades.</span></li>
             </ul>
@@ -790,21 +854,16 @@
       </div>
     </div>
 
-
-
     <!-- TAB: EMISIÓN DE RESULTADOS -->
     <div id="tab-resultados-test" class="tab-content">
       <div class="grid-2">
         <div class="card">
           <div class="card-header"><div class="icon">📊</div><h3>Proceso de Difusión de Resultados</h3></div>
           <div class="card-body">
-            <p style="margin-bottom:1rem;">Para obtener los resultados es necesario seguir el procedimiento descrito en el <strong>"Manual de Difusión de los Resultados 2026–2027"</strong> (disponible a partir del 31 de agosto de 2026 en el apartado Recursos).</p>
+            <p style="margin-bottom:1rem;">Para obtener los resultados es necesario seguir el procedimiento descrito en el <strong>"Comunicado para Difusión de los Resultados 2026–2027"</strong> (disponible a partir del 31 de agosto de 2026 en el apartado Recursos).</p>
             <p>Los resultados se difundirán en los planteles para que estudiantes, profesores, padres de familia y autoridades educativas conozcan la situación académica de la población de nuevo ingreso.</p>
           </div>
         </div>
-
-
-
         <div class="card">
           <div class="card-header"><div class="icon">👥</div><h3>Destinatarios de Resultados</h3></div>
           <div class="card-body">
@@ -832,6 +891,7 @@
     </div>
   </div>
 </section>
+
 
 <!-- ══════════════════════════════════════════
      SECCIÓN 3: MATERIAS (NUEVO APARTADO)
@@ -889,12 +949,16 @@
   </div>
 </section>
 
+
+
+
+
 <!-- ══════════════════════════════════════════
      SECCIÓN 4: PROPEDÉUTICO (Nivelación)
 ══════════════════════════════════════════ -->
 <section id="propedeutico" class="section">
   <div class="page">
-    <div class="section-title">📘 Curso para nivelación</div>
+    <div class="section-title">📚 Curso para nivelación</div>
     <div class="section-title-line"></div>
     <div class="grid-2" style="margin-bottom:1.5rem;">
       <div class="card">
@@ -948,6 +1012,7 @@
     </div>
   </div>
 </section>
+
 
 <!-- ══════════════════════════════════════════
      SECCIÓN 5: COMUNICADOS
@@ -1025,6 +1090,8 @@
     </div>
   </div>
 </section>
+
+
 
 <!-- ══════════════════════════════════════════
      SECCIÓN 6: RECURSOS / DESCARGABLES
@@ -1136,7 +1203,7 @@
             <h4>Manual de Difusión de Resultados 2026–2027</h4>
             <p>Disponible a partir del 15 de septiembre de 2026</p>
           </div>
-          <a class="resource-btn" href="https://ces.cobaed.mx" target="_blank">⏳ Próximamente</span>
+          <a class="resource-btn" href="https://ces.cobaed.mx" target="_blank">⏳ Próximamente</a>
         </div>
       </div>
 
@@ -1159,6 +1226,75 @@
     </div>
   </div>
 </section>
+
+
+
+
+
+
+
+
+
+<!-- ══════════════════════════════════════════
+     SECCIÓN 5B: REPORTE DE INCIDENCIAS
+══════════════════════════════════════════ -->
+<section id="incidencias" class="section">
+  <div class="page">
+    <div class="section-title">🚨 Reporte de Incidencias</div>
+    <div class="section-title-line"></div>
+
+    <div class="incidencias-hero">
+      <h3>Plataforma COBAED para la Entrega de Formatos e Incidencias</h3>
+      <p>Este sistema web permite a los planteles del Colegio de Bachilleres del Estado de Durango (COBAED) gestionar y registrar la documentación correspondiente a la Evaluación Diagnóstico Nuevo Ingreso 2026.</p>
+    </div>
+
+    <p style="font-family:'Sora',sans-serif;font-size:.85rem;font-weight:700;color:var(--plumbago-dark);margin-bottom:.9rem;">Características principales</p>
+
+    <div class="feature-grid">
+      <div class="feature-item">
+        <div class="fi-icon">📝</div>
+        <p>Formulario de entrega con campos para: plantel, turno, responsable, correo institucional, tipo de documento (actas, controles, evidencias, reportes) y archivo adjunto.</p>
+      </div>
+      <div class="feature-item">
+        <div class="fi-icon">📊</div>
+        <p>Tablero de KPIs con métricas en tiempo real: total de entregas, planteles pendientes, incidencias y avance general.</p>
+      </div>
+      <div class="feature-item">
+        <div class="fi-icon">📋</div>
+        <p>Tabla de estado por plantel que muestra qué documentos han sido entregados (acta, control, evidencias) y el estado de cada plantel (completo, pendiente o incompleto).</p>
+      </div>
+      <div class="feature-item">
+        <div class="fi-icon">🕓</div>
+        <p>Historial de cargas con registro de todas las entregas realizadas.</p>
+      </div>
+      <div class="feature-item">
+        <div class="fi-icon">☁️</div>
+        <p>Integración con Google Drive para almacenamiento automático de los archivos subidos.</p>
+      </div>
+      <div class="feature-item">
+        <div class="fi-icon">🔒</div>
+        <p>Medidas de seguridad contra inspección de código y uso de herramientas de desarrollo.</p>
+      </div>
+      <div class="feature-item">
+        <div class="fi-icon">⚖️</div>
+        <p>Leyenda de confidencialidad conforme a la normativa de protección de datos.</p>
+      </div>
+    </div>
+
+    <div class="notice"><span class="icon">📌</span>El sistema está diseñado para optimizar el proceso de recolección de documentos institucionales, ofreciendo una interfaz intuitiva y funcionalidades de filtrado, búsqueda y visualización del progreso de las entregas por plantel.</div>
+
+    <div class="incidencias-cta-wrap" style="margin-top:1.5rem;">
+      <span class="tag">⚠️ Acceso directo a la plataforma</span>
+      <a class="incidencias-cta-btn" href="https://ezamarripa-creator.github.io/Incidencias_EDIEMS_COBAED_2026/" target="_blank">
+        🚀 Ir a Reporte de Incidencias <span class="arrow-ico">→</span>
+      </a>
+      <p style="font-size:.78rem;color:var(--gray-600);max-width:420px;">Serás redirigido al micrositio institucional para la entrega de formatos e incidencias EDIEMS 2026.</p>
+    </div>
+  </div>
+</section>
+
+
+
 
 <!-- ══════════════════════════════════════════
      SECCIÓN 7: RESULTADOS
